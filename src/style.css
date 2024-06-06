@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+  @apply box-border grid place-items-center  min-h-screen  bg-[#e2d4ff]
+}
+.weather{
+ @apply bg-blue-500 px-6 py-9 flex flex-col justify-center items-center w-[24em]  shadow-2xl rounded-[.8em]
+}
+.search-img{
+  @apply transform hover:scale-110 transition-transform duration-75 ease-in cursor-pointer bg-slate-100  px-[.7em] py-[.7em] rounded-full
+}
+input {
+  @apply shadow border-none px-7 focus:outline-none py-2 rounded-full placeholder:text-gray-400 bg-slate-100 text-black
+}
+.search-bar{
+  @apply flex items-center gap-2  mb-6
+}
+.weather-icon{
+  @apply p-4 object-cover  rounded-[.9em]  mb-7 mt-3  shadow-2xl transform hover:scale-105 cursor-pointer transition duration-100 ease-in overflow-hidden
+}
+.temperature{
+  @apply text-6xl text-white font-bold
+}
+.city {
+  @apply text-white
+  font-semibold mt-3 text-2xl
+}
+.weather-data{
+  @apply flex items-center justify-between
+ mt-6 w-[80%]
+}
+.col {
+  @apply flex
+  gap-2 text-white text-sm font-semibold
+}
+.loader{
+  @apply w-full h-[26em]
+}
+.weather-icon1{
+  @apply w-full h-[10em] bg-gray-300 rounded-[.9em] overflow-hidden
+}
+.skele{
+  @apply w-full h-full
+}
+.temp{
+  @apply w-[1.4em] h-[.8em] rounded-[.9em] mt-2
+}
+.temp1 {
+  @apply flex items-center mx-auto w-[max-content] h-[max-content]
+}
+.name{
+  @apply h-[.8em] w-[9em] mx-auto mt-3 rounded-full
+}
+.humidity{
+  @apply h-[1em] w-[5em] rounded-full inline-block
+}
+
+.f1{
+  @apply mx-auto mt-9 w-full
+}
